@@ -1,0 +1,148 @@
+{
+    "0": {
+      "Bearish": 2,
+      "Neutral": 5,
+      "Bullish": 13,
+      "Data": [
+        { "Type": "S", "Value": "EMA (5)", "Price": 22091.28 },
+        { "Type": "S", "Value": "SMA (5)", "Price": 22087.02 },
+        { "Type": "S", "Value": "EMA (10)", "Price": 22102.87 },
+        { "Type": "S", "Value": "SMA (10)", "Price": 22114.63 },
+        { "Type": "S", "Value": "EMA (20)", "Price": 22108.15 },
+        { "Type": "S", "Value": "SMA (20)", "Price": 22115.62 },
+        { "Type": "S", "Value": "EMA (30)", "Price": 22105.43 },
+        { "Type": "S", "Value": "SMA (30)", "Price": 22110.67 },
+        { "Type": "S", "Value": "EMA (50)", "Price": 22094.20 },
+        { "Type": "S", "Value": "SMA (50)", "Price": 22100.39 },
+        { "Type": "B", "Value": "EMA (100)", "Price": 22063.52 },
+        { "Type": "B", "Value": "SMA (100)", "Price": 22055.74 },
+        { "Type": "B", "Value": "EMA (200)", "Price": 22022.45 },
+        { "Type": "B", "Value": "SMA (200)", "Price": 21997.33 },
+        { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 22122.25 },
+        { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+        { "Type": "B", "Value": "Hull MA (9)", "Price": 22071.08 }
+      ]
+    },
+    "1": {
+        "Bearish": 2,
+        "Neutral": 7,
+        "Bullish": 8,
+        "Data": [
+          { "Type": "S", "Value": "EMA (5)", "Price": 22096.01 },
+          { "Type": "S", "Value": "SMA (5)", "Price": 22102.78 },
+          { "Type": "S", "Value": "EMA (10)", "Price": 22103.63 },
+          { "Type": "S", "Value": "SMA (10)", "Price": 22113.59 },
+          { "Type": "S", "Value": "EMA (20)", "Price": 22098.53 },
+          { "Type": "S", "Value": "SMA (20)", "Price": 22104.85 },
+          { "Type": "S", "Value": "EMA (30)", "Price": 22087.47 },
+          { "Type": "S", "Value": "SMA (30)", "Price": 22092.96 },
+          { "Type": "B", "Value": "EMA (50)", "Price": 22064.03 },
+          { "Type": "B", "Value": "SMA (50)", "Price": 22057.15 },
+          { "Type": "B", "Value": "EMA (100)", "Price": 22023.01 },
+          { "Type": "B", "Value": "SMA (100)", "Price": 22000.62 },
+          { "Type": "B", "Value": "EMA (200)", "Price": 22015.68 },
+          { "Type": "B", "Value": "SMA (200)", "Price": 21966.17 },
+          { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 22115.08 },
+          { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+          { "Type": "B", "Value": "Hull MA (9)", "Price": 22076.15 }
+        ]
+      },
+      "2": {
+        "Bearish": 2,
+        "Neutral": 8,
+        "Bullish": 5,
+        "Data": [
+          { "Type": "S", "Value": "EMA (5)", "Price": 22101.14 },
+          { "Type": "S", "Value": "SMA (5)", "Price": 22116.60 },
+          { "Type": "S", "Value": "EMA (10)", "Price": 22101.86 },
+          { "Type": "S", "Value": "SMA (10)", "Price": 22108.73 },
+          { "Type": "S", "Value": "EMA (20)", "Price": 22086.10 },
+          { "Type": "S", "Value": "SMA (20)", "Price": 22090.76 },
+          { "Type": "B", "Value": "EMA (30)", "Price": 22068.10 },
+          { "Type": "B", "Value": "SMA (30)", "Price": 22060.84 },
+          { "Type": "B", "Value": "EMA (50)", "Price": 22037.81 },
+          { "Type": "B", "Value": "SMA (50)", "Price": 22043.75 },
+          { "Type": "B", "Value": "EMA (100)", "Price": 22010.37 },
+          { "Type": "B", "Value": "SMA (100)", "Price": 21945.47 },
+          { "Type": "B", "Value": "EMA (200)", "Price": 22040.68 },
+          { "Type": "B", "Value": "SMA (200)", "Price": 22006.64 },
+          { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 22032.00 },
+          { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+          { "Type": "S", "Value": "Hull MA (9)", "Price": 22107.19 }
+        ]
+      },
+      "3": {
+        "Bearish": 2,
+        "Neutral": 8,
+        "Bullish": 6,
+        "Data": [
+          { "Type": "S", "Value": "EMA (5)", "Price": 22094.01 },
+          { "Type": "S", "Value": "SMA (5)", "Price": 22101.84 },
+          { "Type": "S", "Value": "EMA (10)", "Price": 22083.78 },
+          { "Type": "S", "Value": "SMA (10)", "Price": 22091.39 },
+          { "Type": "B", "Value": "EMA (20)", "Price": 22053.62 },
+          { "Type": "B", "Value": "SMA (20)", "Price": 22051.08 },
+          { "Type": "B", "Value": "EMA (30)", "Price": 22029.79 },
+          { "Type": "B", "Value": "SMA (30)", "Price": 22020.26 },
+          { "Type": "B", "Value": "EMA (50)", "Price": 22011.07 },
+          { "Type": "B", "Value": "SMA (50)", "Price": 21946.93 },
+          { "Type": "B", "Value": "EMA (100)", "Price": 22037.56 },
+          { "Type": "B", "Value": "SMA (100)", "Price": 21992.88 },
+          { "Type": "S", "Value": "EMA (200)", "Price": 22081.90 },
+          { "Type": "S", "Value": "SMA (200)", "Price": 22185.05 },
+          { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 22032.00 },
+          { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+          { "Type": "S", "Value": "Hull MA (9)", "Price": 22109.27 }
+        ]
+      },
+      "4": {
+        "Bearish": 2,
+        "Neutral": 11,
+        "Bullish": 11,
+        "Data": [
+          { "Type": "B", "Value": "EMA (5)", "Price": 22079.20 },
+          { "Type": "S", "Value": "SMA (5)", "Price": 22089.74 },
+          { "Type": "B", "Value": "EMA (10)", "Price": 22055.40 },
+          { "Type": "B", "Value": "SMA (10)", "Price": 22057.24 },
+          { "Type": "B", "Value": "EMA (20)", "Price": 22017.77 },
+          { "Type": "B", "Value": "SMA (20)", "Price": 21987.83 },
+          { "Type": "B", "Value": "EMA (30)", "Price": 22009.30 },
+          { "Type": "B", "Value": "SMA (30)", "Price": 21950.25 },
+          { "Type": "B", "Value": "EMA (50)", "Price": 22030.08 },
+          { "Type": "B", "Value": "SMA (50)", "Price": 21986.74 },
+          { "Type": "B", "Value": "EMA (100)", "Price": 22077.71 },
+          { "Type": "S", "Value": "SMA (100)", "Price": 22172.55 },
+          { "Type": "B", "Value": "EMA (200)", "Price": 22044.73 },
+          { "Type": "S", "Value": "SMA (200)", "Price": 22111.90 },
+          { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 21945.45 },
+          { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+          { "Type": "S", "Value": "Hull MA (9)", "Price": 22107.38 }
+        ]
+      },
+      "5": {
+        "Bearish": 2,
+        "Neutral": 1,
+        "Bullish": 14,
+        "Data": [
+          { "Type": "B", "Value": "EMA (5)", "Price": 22016.03 },
+          { "Type": "B", "Value": "SMA (5)", "Price": 21964.19 },
+          { "Type": "B", "Value": "EMA (10)", "Price": 22056.57 },
+          { "Type": "B", "Value": "SMA (10)", "Price": 22065.70 },
+          { "Type": "B", "Value": "EMA (20)", "Price": 22076.49 },
+          { "Type": "S", "Value": "SMA (20)", "Price": 22159.61 },
+          { "Type": "B", "Value": "EMA (30)", "Price": 22031.16 },
+          { "Type": "B", "Value": "SMA (30)", "Price": 22090.58 },
+          { "Type": "B", "Value": "EMA (50)", "Price": 21857.60 },
+          { "Type": "B", "Value": "SMA (50)", "Price": 21931.91 },
+          { "Type": "B", "Value": "EMA (100)", "Price": 21332.67 },
+          { "Type": "B", "Value": "SMA (100)", "Price": 21205.93 },
+          { "Type": "B", "Value": "EMA (200)", "Price": 20486.04 },
+          { "Type": "B", "Value": "SMA (200)", "Price": 20312.01 },
+          { "Type": "N", "Value": "Ichimoku Base line (9, 26, 52, 26)", "Price": 22118.40 },
+          { "Type": "N", "Value": "Volume Weighted MA (20)", "Price": 0.00 },
+          { "Type": "B", "Value": "Hull MA (9)", "Price": 21909.50 }
+        ]
+      }
+  }
+  
+  

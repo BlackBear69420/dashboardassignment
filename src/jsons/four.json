@@ -1,0 +1,105 @@
+{
+    "0": {
+        "Bearish": 6,
+        "Neutral": 0,
+        "Bullish": 0,
+        "Data": [
+          { "Type": "N", "Value": "RSI (14)", "Price": 40.38 },
+          { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 14.54 },
+          { "Type": "N", "Value": "CCI (20)", "Price": -97.47 },
+          { "Type": "N", "Value": "ADX (14)", "Price": 26.67 },
+          { "Type": "S", "Value": "Awesome Osc.", "Price": -18.79 },
+          { "Type": "S", "Value": "Momentum (10)", "Price": -52.20 },
+          { "Type": "S", "Value": "Macd (12, 26, 9)", "Price": -1.74 },
+          { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 8.39 },
+          { "Type": "S", "Value": "Williams %Range (14)", "Price": -85.46 },
+          { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 40.59 }
+        ]
+      },
+      "1": {
+        "Bearish": 7,
+        "Neutral": 0,
+        "Bullish": 0,
+        "Data": [
+          { "Type": "N", "Value": "RSI (14)", "Price": 46.95 },
+          { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 14.54 },
+          { "Type": "N", "Value": "CCI (20)", "Price": -79.31 },
+          { "Type": "N", "Value": "ADX (14)", "Price": 18.59 },
+          { "Type": "N", "Value": "Awesome Osc.", "Price": 25.60 },
+          { "Type": "S", "Value": "Momentum (10)", "Price": -13.35 },
+          { "Type": "S", "Value": "Macd (12, 26, 9)", "Price": 11.71 },
+          { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 0.97 },
+          { "Type": "S", "Value": "Williams %Range (14)", "Price": -85.46 },
+          { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 39.97 }
+        ]
+      },
+      "2": {
+        "Bearish": 7,
+        "Neutral": 1,
+        "Bullish": 0,
+        "Data": [
+          { "Type": "N", "Value": "RSI (14)", "Price": 51.51 },
+          { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 16.92 },
+          { "Type": "N", "Value": "CCI (20)", "Price": -32.52 },
+          { "Type": "N", "Value": "ADX (14)", "Price": 13.57 },
+          { "Type": "N", "Value": "Awesome Osc.", "Price": 67.30 },
+          { "Type": "S", "Value": "Momentum (10)", "Price": -15.70 },
+          { "Type": "S", "Value": "Macd (12, 26, 9)", "Price": 24.23 },
+          { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 12.81 },
+          { "Type": "B", "Value": "Williams %Range (14)", "Price": -83.08 },
+          { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 45.33 }
+        ]
+      },
+      "3": {
+        "Bearish": 10,
+        "Neutral": 0,
+        "Bullish": 0,
+        "Data": [
+          { "Type": "N", "Value": "RSI (14)", "Price": 55.85 },
+          { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 66.41 },
+          { "Type": "N", "Value": "CCI (20)", "Price": 51.64 },
+          { "Type": "N", "Value": "ADX (14)", "Price": 12.79 },
+          { "Type": "N", "Value": "Awesome Osc.", "Price": 105.57 },
+          { "Type": "N", "Value": "Momentum (10)", "Price": 44.35 },
+          { "Type": "N", "Value": "Macd (12, 26, 9)", "Price": 39.81 },
+          { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 46.62 },
+          { "Type": "N", "Value": "Williams %Range (14)", "Price": -33.59 },
+          { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 51.01 }
+        ]
+      },
+      "4": {
+        "Bearish": 8,
+        "Neutral": 2,
+        "Bullish": 0,
+        "Data": [
+          { "Type": "N", "Value": "RSI (14)", "Price": 58.31 },
+          { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 66.41 },
+          { "Type": "N", "Value": "CCI (20)", "Price": 76.55 },
+          { "Type": "N", "Value": "ADX (14)", "Price": 16.02 },
+          { "Type": "B", "Value": "Awesome Osc.", "Price": 133.74 },
+          { "Type": "N", "Value": "Momentum (10)", "Price": 77.20 },
+          { "Type": "B", "Value": "Macd (12, 26, 9)", "Price": 35.51 },
+          { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 60.48 },
+          { "Type": "N", "Value": "Williams %Range (14)", "Price": -33.59 },
+          { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 59.80 }
+        ]
+      },
+    "5": {
+      "Bearish": 9,
+      "Neutral": 0,
+      "Bullish": 0,
+      "Data": [
+        { "Type": "N", "Value": "RSI (14)", "Price": 51.48 },
+        { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 47.35 },
+        { "Type": "N", "Value": "CCI (20)", "Price": -43.90 },
+        { "Type": "N", "Value": "ADX (14)", "Price": 16.19 },
+        { "Type": "S", "Value": "Awesome Osc.", "Price": -96.92 },
+        { "Type": "N", "Value": "Momentum (10)", "Price": -396.80 },
+        { "Type": "N", "Value": "Macd (12, 26, 9)", "Price": 14.42 },
+        { "Type": "N", "Value": "Stoch. RSI Fast (3, 3, 14, 14)", "Price": 10.72 },
+        { "Type": "N", "Value": "Williams %Range (14)", "Price": -52.65 },
+        { "Type": "N", "Value": "Ultimate Osc. (7, 14, 28)", "Price": 55.75 }
+      ]
+    }
+  }
+  
