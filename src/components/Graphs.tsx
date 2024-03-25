@@ -15,7 +15,7 @@ import { Tooltip } from 'react-tooltip'
 
 function Graphs() {
   const [activeButton, setActiveButton] = useState(5);
-  const [pointerPosition, setPointerPosition] = useState({ left: "0%" });
+  const [pointerPosition, setPointerPosition] = useState({ right: "0%" });
   const [pointerPosition2, setPointerPosition2] = useState({ left: "0%" });
   const [pointerPosition3, setPointerPosition3] = useState({ left: "0%" });
   const [showAllItems, setShowAllItems] = useState(false);
@@ -68,7 +68,7 @@ function Graphs() {
     const { Bearish, Neutral, Bullish } = graphData[activeButton.toString()];
     const total = Bearish + Neutral + Bullish;
     const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition({ left: `${46.5 + left}%` });
+    setPointerPosition({ right: `${46.5 + left}%` });
     console.log(pointerPosition)
   }, [activeButton, graphData]);
 
@@ -99,35 +99,38 @@ function Graphs() {
 
   return (
     <div className="mt-16 lg:px-60 items-center bg-[#f6f9fd]  pt-5 pb-20">
-      <div className="sticky top-16  z-10">
-        <div className="flex justify-center">
-          <div className=" space-x-2 items-center justify-center bg-white inline-flex min-w-min px-2 rounded-lg">
-            {["5min", "10min", "15min", "30min", "hour", "day"].map(
-              (time, index) => (
-                <button
-                  key={index}
-                  className={` py-2 rounded-md text-xs font-medium ${
-                    activeButton === index
-                      ? "bg-[#3f78cd] text-white px-3"
-                      : "text-[#aaa9cf] px-1"
-                  }`}
-                  onClick={() => handleButtonClick(index)}
-                  style={{}} // Adjust font size
-                >
-                  {activeButton === index
-                    ? time.includes("min")
-                      ? time.replace("min", " Minutes")
-                      : time === "day"
-                      ? "1 Day"
-                      : time === "hour"
-                      ? "1 Hour"
-                      : time.charAt(0).toUpperCase() + time.slice(1)
-                    : time}
-                </button>
-              )
-            )}
-          </div>
-        </div>
+      <div className="sticky top-16  z-10 bg-[#f6f9fd] pb-5">
+      <div className="button-group-container">
+  <div className="flex justify-center">
+    <div className=" space-x-2 items-center justify-center bg-white inline-flex min-w-min px-2 rounded-lg">
+      {["5min", "10min", "15min", "30min", "hour", "day"].map(
+        (time, index) => (
+          <button
+            key={index}
+            className={`py-2 rounded-md text-xs font-medium ${
+              activeButton === index
+                ? "bg-[#3f78cd] text-white px-3"
+                : "text-[#aaa9cf] px-1"
+            }`}
+            onClick={() => handleButtonClick(index)}
+            style={{}} // Adjust font size
+          >
+            {activeButton === index
+              ? time.includes("min")
+                ? time.replace("min", " Minutes")
+                : time === "day"
+                ? "1 Day"
+                : time === "hour"
+                ? "1 Hour"
+                : time.charAt(0).toUpperCase() + time.slice(1)
+              : time}
+          </button>
+        )
+      )}
+    </div>
+  </div>
+</div>
+
         <div>
           <span className="flex items-center">
             <svg
@@ -168,7 +171,7 @@ function Graphs() {
           </span>
         </div>
       </div>
-      <div className="mt-8 grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+      <div className="mt-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2">
         {/* First card */}
         <div className="bg-white rounded-lg p-4 pb-14">
           <div className="flex justify-between">

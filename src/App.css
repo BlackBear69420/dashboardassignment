@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.pointer {
-    transition: left 0.3s ease;
+.button-group-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .button-group-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999; 
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
   }
+
+  .button-group-container .flex {
+    justify-content: center;
+  }
+}
