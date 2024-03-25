@@ -1,8 +1,8 @@
 {
     "0": {
         "Bearish": 6,
-        "Neutral": 0,
-        "Bullish": 0,
+        "Neutral": 6,
+        "Bullish": 6,
         "Data": [
           { "Type": "N", "Value": "RSI (14)", "Price": 40.38 },
           { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 14.54 },
@@ -18,8 +18,8 @@
       },
       "1": {
         "Bearish": 7,
-        "Neutral": 0,
-        "Bullish": 0,
+        "Neutral": 3,
+        "Bullish": 5,
         "Data": [
           { "Type": "N", "Value": "RSI (14)", "Price": 46.95 },
           { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 14.54 },

@@ -1,8 +1,8 @@
 {
     "0": {
-      "Bearish": 2,
-      "Neutral": 5,
-      "Bullish": 13,
+      "Bearish": 9,
+      "Neutral": 9,
+      "Bullish": 9,
       "Data": [
         { "Type": "S", "Value": "EMA (5)", "Price": 22091.28 },
         { "Type": "S", "Value": "SMA (5)", "Price": 22087.02 },

@@ -16,8 +16,8 @@ import { Tooltip } from 'react-tooltip'
 function Graphs() {
   const [activeButton, setActiveButton] = useState(5);
   const [pointerPosition, setPointerPosition] = useState({ right: "0%" });
-  const [pointerPosition2, setPointerPosition2] = useState({ left: "0%" });
-  const [pointerPosition3, setPointerPosition3] = useState({ left: "0%" });
+  const [pointerPosition2, setPointerPosition2] = useState({ right: 0 });
+  const [pointerPosition3, setPointerPosition3] = useState({ right: 0 });
   const [showAllItems, setShowAllItems] = useState(false);
   const [showAllItems2, setShowAllItems2] = useState(false);
   const [graphData, setGraphData] = useState({
@@ -77,7 +77,7 @@ function Graphs() {
     const { Bearish, Neutral, Bullish } = graphData3[activeButton.toString()];
     const total = Bearish + Neutral + Bullish;
     const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition2({ left: `${46.5+left}%` });
+    setPointerPosition2({ right: left+130 });
   }, [activeButton, graphData3]);
 
 
@@ -85,9 +85,8 @@ function Graphs() {
     const { Bearish, Neutral, Bullish } = graphData4[activeButton.toString()];
     const total = Bearish + Neutral + Bullish;
     const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition3({ left: `${46.5+left}%` });
-    console.log(pointerPosition3)
-  }, [activeButton, graphData4]);
+    setPointerPosition3({ right: left+100 });
+  }, [activeButton, graphData3]);
 
 
   const toggleShowAllItems = () => {
@@ -361,7 +360,7 @@ function Graphs() {
             <img
               src={pointer1}
               alt="Pointer"
-              className="h-5 w-5 absolute top-[35%]"
+              className="h-5 w-5 absolute top-[35%] "
               style={pointerPosition2}
             />
           </div>
@@ -509,12 +508,12 @@ function Graphs() {
 
 <div className="text-slate-400 text-sm float-end mt-5 mx-10 flex font-medium hover:text-blue-300">
             <button className="flex items-center" onClick={toggleShowAllItems2}>
-              {showAllItems ? (
+              {showAllItems2 ? (
                 <ChevronUpIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               ) : (
                 <ChevronDownIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               )}
-              {showAllItems ? "View Less" : "View More"}
+              {showAllItems2 ? "View Less" : "View More"}
             </button>
           </div>
         </div>
