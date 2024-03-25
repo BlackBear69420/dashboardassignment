@@ -77,7 +77,7 @@ function Graphs() {
     const { Bearish, Neutral, Bullish } = graphData3[activeButton.toString()];
     const total = Bearish + Neutral + Bullish;
     const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition2({ right: left+130 });
+    setPointerPosition2({ right: left+125 });
   }, [activeButton, graphData3]);
 
 
@@ -85,7 +85,7 @@ function Graphs() {
     const { Bearish, Neutral, Bullish } = graphData4[activeButton.toString()];
     const total = Bearish + Neutral + Bullish;
     const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition3({ right: left+100 });
+    setPointerPosition3({ right: left+125 });
   }, [activeButton, graphData3]);
 
 
