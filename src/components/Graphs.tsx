@@ -16,8 +16,8 @@ import { Tooltip } from 'react-tooltip'
 function Graphs() {
   const [activeButton, setActiveButton] = useState(5);
   const [pointerPosition, setPointerPosition] = useState({ right: "0%" });
-  const [pointerPosition2, setPointerPosition2] = useState({ right: 0 });
-  const [pointerPosition3, setPointerPosition3] = useState({ right: 0 });
+  const [pointerPosition2, setPointerPosition2] = useState({ left: "0%" });
+  const [pointerPosition3, setPointerPosition3] = useState({  left: "0%"  });
   const [showAllItems, setShowAllItems] = useState(false);
   const [showAllItems2, setShowAllItems2] = useState(false);
   const [graphData, setGraphData] = useState({
@@ -75,17 +75,18 @@ function Graphs() {
 
   useEffect(() => {
     const { Bearish, Neutral, Bullish } = graphData3[activeButton.toString()];
-    const total = Bearish + Neutral + Bullish;
-    const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition2({ right: left+125 });
+    const total = Bearish  + Bullish;
+    const left = ((Bullish) / total) * 100;
+    setPointerPosition2({ left: `${left}%` });
+    console.log(pointerPosition2)
   }, [activeButton, graphData3]);
 
 
   useEffect(() => {
     const { Bearish, Neutral, Bullish } = graphData4[activeButton.toString()];
-    const total = Bearish + Neutral + Bullish;
-    const left = ((Bearish - Bullish) / total) * 100;
-    setPointerPosition3({ right: left+125 });
+    const total = Bearish  + Bullish;
+    const left = ((Bullish) / total) * 100;
+    setPointerPosition3({ left: `${left}%` });
   }, [activeButton, graphData3]);
 
 

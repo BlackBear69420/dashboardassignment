@@ -36,7 +36,7 @@
       "2": {
         "Bearish": 7,
         "Neutral": 1,
-        "Bullish": 0,
+        "Bullish": 5,
         "Data": [
           { "Type": "N", "Value": "RSI (14)", "Price": 51.51 },
           { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 16.92 },
@@ -53,7 +53,7 @@
       "3": {
         "Bearish": 10,
         "Neutral": 0,
-        "Bullish": 0,
+        "Bullish": 3,
         "Data": [
           { "Type": "N", "Value": "RSI (14)", "Price": 55.85 },
           { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 66.41 },
@@ -70,7 +70,7 @@
       "4": {
         "Bearish": 8,
         "Neutral": 2,
-        "Bullish": 0,
+        "Bullish": 7,
         "Data": [
           { "Type": "N", "Value": "RSI (14)", "Price": 58.31 },
           { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 66.41 },
@@ -86,8 +86,8 @@
       },
     "5": {
       "Bearish": 9,
-      "Neutral": 0,
-      "Bullish": 0,
+      "Neutral": 4,
+      "Bullish": 3,
       "Data": [
         { "Type": "N", "Value": "RSI (14)", "Price": 51.48 },
         { "Type": "N", "Value": "Stoch.%K (14, 3, 3)", "Price": 47.35 },

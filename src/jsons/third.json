@@ -24,8 +24,8 @@
       ]
     },
     "1": {
-        "Bearish": 2,
-        "Neutral": 7,
+        "Bearish": 7,
+        "Neutral": 2,
         "Bullish": 8,
         "Data": [
           { "Type": "S", "Value": "EMA (5)", "Price": 22096.01 },
@@ -96,8 +96,8 @@
         ]
       },
       "4": {
-        "Bearish": 2,
-        "Neutral": 11,
+        "Bearish": 4,
+        "Neutral": 2,
         "Bullish": 11,
         "Data": [
           { "Type": "B", "Value": "EMA (5)", "Price": 22079.20 },
