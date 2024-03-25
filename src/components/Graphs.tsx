@@ -11,6 +11,7 @@ import Second from "../assets/second.svg";
 import Third from "../assets/third.svg";
 import Fourth from "../assets/fourth.svg";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
+import { Tooltip } from 'react-tooltip'
 
 function Graphs() {
   const [activeButton, setActiveButton] = useState(5);
@@ -98,7 +99,7 @@ function Graphs() {
 
   return (
     <div className="mt-16 lg:px-60 items-center bg-[#f6f9fd]  pt-5 pb-20">
-      <div className="">
+      <div className="sticky top-16  z-10">
         <div className="flex justify-center">
           <div className=" space-x-2 items-center justify-center bg-white inline-flex min-w-min px-2 rounded-lg">
             {["5min", "10min", "15min", "30min", "hour", "day"].map(
@@ -173,6 +174,9 @@ function Graphs() {
           <div className="flex justify-between">
             <p className="text-sm font-medium">Summary</p>
             <svg
+             data-tooltip-id="my-tooltip"
+             data-tooltip-content="Here is a Snapshot of the most popular technical indicators. We take these into consideration, analyze them, run some internal calculations and help you understand the overall market conditions."
+             data-tooltip-place="left"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -252,12 +256,23 @@ function Graphs() {
             </div>
           </div>
         </div>
-
         {/* Second card */}
         <div className="bg-white rounded-lg p-4 pb-14">
           <div className="flex justify-between">
             <p className="text-sm font-medium">Support & Resistance</p>
+            <Tooltip id="my-tooltip"
+            opacity={1}
+            style={{maxWidth:300,
+            backgroundColor:'white',
+            color:'black',
+            zIndex:20000,
+            fontSize:13
+          }}
+            />
             <svg
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Support: Support prevents the price from falling further. It is a price point on the chart where the trader expects maximum demand (in terms of buying) coming into the stock/index. Whenever the price falls to the support line, it is likely to bounce back. Resistance is something that stops the price from rising further. The resistance level is a price point on the chart where traders expect maximum supply (in terms of selling) for the stock/index. The resistance level is always above the current market price."
+            data-tooltip-place="left"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -377,27 +392,31 @@ function Graphs() {
           <div className=" mt-8 text-xs px-10 flex flex-col gap-4">
             {graphData3[activeButton]?.Data &&
               graphData3[activeButton]?.Data.map((item, index) => (
-                <div className="flex items-center justify-between" key={index}>
-                  <div className="flex justify-center items-center gap-2">
-                    <p
-                      className={`bg-[#fadfdf] text-${
-                        item.Type === "B" ? "#51e551" : "#e55151"
-                      } p-1 text-xs px-2 rounded-sm`}
-                    >
-                      {item.Type}
-                    </p>
-                    <p>{item.Value}</p>
+                !(showAllItems || index < 2) ? null : (
+                  <div className="flex items-center justify-between" key={index}>
+                    <div className="flex justify-center items-center gap-2">
+                      <p
+                        className={` p-1 text-xs px-2 rounded-sm`}
+                        style={{
+                          backgroundColor: item.Type === "B" ? "#fadfdf" : item.Type === "S" ? "#AFDBF5" : "#f0f0f0",
+                          color: item.Type === "B" ? "red" : item.Type === "S" ? "#0071c5" : "grey"
+                        }}
+                      >
+                        {item.Type}
+                      </p>
+                      <p>{item.Value}</p>
+                    </div>
+                    <p>{item.Price}</p>
                   </div>
-                  <p>{item.Price}</p>
-                </div>
+                )
               ))}
           </div>
-          <div className="text-slate-500 text-sm float-end mt-5 mx-10 flex">
+          <div className="text-slate-400 text-sm float-end mt-5 mx-10 flex font-medium hover:text-blue-300">
             <button className="flex items-center" onClick={toggleShowAllItems}>
               {showAllItems ? (
-                <ChevronUpIcon className="h-5 w-5 text-slate-500 mr-1" />
+                <ChevronUpIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               ) : (
-                <ChevronDownIcon className="h-5 w-5 text-slate-500 mr-1" />
+                <ChevronDownIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               )}
               {showAllItems ? "View Less" : "View More"}
             </button>
@@ -408,6 +427,9 @@ function Graphs() {
           <div className="flex justify-between">
             <p className="text-sm font-medium">Oscillators</p>
             <svg
+               data-tooltip-id="my-tooltip"
+               data-tooltip-content="They form a majority of the leading technical indicators and they oscillate between a local minimum & maximum. The interpretation varies based on the position of the oscillator on the chart."
+               data-tooltip-place="top"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -459,29 +481,35 @@ function Graphs() {
             </div>
           </span>
           <div className=" mt-8 text-xs px-10 flex flex-col gap-4">
-            {graphData4[activeButton]?.Data &&
-              graphData4[activeButton]?.Data.map((item, index) => (
-                <div className="flex items-center justify-between" key={index}>
-                  <div className="flex justify-center items-center gap-2">
-                    <p
-                      className={`bg-[#fadfdf] text-${
-                        item.Type === "B" ? "#51e551" : "#e55151"
-                      } p-1 text-xs px-2 rounded-sm`}
-                    >
-                      {item.Type}
-                    </p>
-                    <p>{item.Value}</p>
-                  </div>
-                  <p>{item.Price}</p>
-                </div>
-              ))}
+  {graphData4[activeButton]?.Data &&
+    graphData4[activeButton]?.Data.map((item, index) => (
+      // Check if showAllItems is false and index is greater than 2, then return null
+      !(showAllItems2 || index < 2) ? null : (
+        <div className="flex items-center justify-between" key={index}>
+          <div className="flex justify-center items-center gap-2">
+            <p
+              className={` p-1 text-xs px-2 rounded-sm`}
+              style={{
+                backgroundColor: item.Type === "B" ? "#fadfdf" : item.Type === "S" ? "#AFDBF5" : "#f0f0f0",
+                color: item.Type === "B" ? "red" : item.Type === "S" ? "#0071c5" : "grey"
+              }}
+            >
+              {item.Type}
+            </p>
+            <p>{item.Value}</p>
           </div>
-          <div className="text-slate-500 text-sm float-end mt-5 mx-10 flex">
+          <p>{item.Price}</p>
+        </div>
+      )
+    ))}
+</div>
+
+<div className="text-slate-400 text-sm float-end mt-5 mx-10 flex font-medium hover:text-blue-300">
             <button className="flex items-center" onClick={toggleShowAllItems2}>
               {showAllItems ? (
-                <ChevronUpIcon className="h-5 w-5 text-slate-500 mr-1" />
+                <ChevronUpIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               ) : (
-                <ChevronDownIcon className="h-5 w-5 text-slate-500 mr-1" />
+                <ChevronDownIcon className="h-5 w-5 text-slate-400 mr-1 hover:text-blue-300" />
               )}
               {showAllItems ? "View Less" : "View More"}
             </button>
